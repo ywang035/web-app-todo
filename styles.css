@@ -1,0 +1,143 @@
+body{
+    font-family: Tahoma;
+    color: #555;
+    letter-spacing: 1px;
+}
+
+h1, h2{
+    font-weight: bold;
+}
+
+#container{
+    width: 90%;
+    max-width: 960px;
+    margin: 40px auto;
+    border-radius: 6px;
+    box-shadow: 0px 1px 6px lightgray;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+/* title banner section */
+#page-banner{
+    background: #b1b583 ;
+    padding: 20px 0;
+    width: 100%;
+}
+
+#page-banner h1,p{
+    text-align: center;
+    margin: 10px 0;
+}
+
+#page-banner input{
+    width: 70%;
+    max-width: 490px;
+    min-width: 400px;
+    margin: 20px auto;
+    display: block;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #444;
+}
+
+
+/* list section */
+
+#current-task-list, #add-book, #tabbed-content{
+    margin: 30px;
+}
+
+#current-task-list ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#current-task-list li{
+    padding: 10px;
+    border-left: 5px solid #ddd;
+    margin: 10px 0;
+    display: flex;
+}
+
+#current-task-list li:hover{
+    border-color: #F68D22;
+}
+
+.task {
+    margin: auto auto auto 0;
+}
+.delete{
+    margin: auto 0 auto auto;
+    background: #F68D22;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+.delete:hover{
+    background: #E55d2b;
+}
+
+/* add task section */
+#add-task-bar {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+#add-task input {
+    width: 70%;
+    max-width: 400px;
+    margin: 10px 5px 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#add-task button {
+    float: right;
+    width: 100px;
+    margin: 10px auto 10px 5px;
+    padding: 10px;
+    cursor: pointer;
+    border: 2px solid #F68D22;
+    border-radius: 5px;
+    border-color: #F68D22;
+    color: white;
+    background-color: #F68D22;
+}
+
+#add-task button:hover{
+    background: #E55d2b;
+    border: 2px solid #E55d2b;
+}
+
+
+/*
+#tabbed-content li{
+    display: inline-block;
+    padding: 10px 14px;
+    background: #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+#tabbed-content .tab{
+    display: none;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    border-radius: 4px;
+}
+#tabbed-content .tab.active{
+    display: block;
+}
+*/
