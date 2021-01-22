@@ -1,3 +1,5 @@
+// finish task
+// delete task
 const lists = document.querySelectorAll(".task-list ul");
 Array.from(lists).forEach(myFunction);
 
@@ -72,11 +74,15 @@ const searchBar = document.forms['search-tasks'].querySelector('input');
 
 searchBar.addEventListener('keyup', function (e) {
     const term = e.target.value.toLowerCase();
-    const tasks = list.getElementsByTagName('li');
+    const currentList = document.querySelector("#current-task-list ul");
+    const finsihedList = document.querySelector('#finished-task-list ul');
+
+    const task1 = Array.from(currentList.getElementsByTagName('li'));
+    const task2 = Array.from(finsihedList.getElementsByTagName('li'));
+    const tasks = task1.concat(task2);
 
     Array.from(tasks).forEach(function (task) {
-
-        const taskText = task.firstElementChild.textContent;
+        const taskText = task.firstElementChild.nextElementSibling.textContent;
 
         if (taskText.toLowerCase().indexOf(term) != -1) {
             task.style.display = 'flex';
