@@ -14,19 +14,32 @@
             <div id="page-banner">
                 <h1 class="title">My To-Do</h1>
                 <p>tackle your tasks</p>
-                <p style="font-size: 75%">v1.0</p>
+                <p style="font-size: 75%">v2.0</p>
                 <form id="search-tasks">
-                    <input type="text" placeholder="Search tasks..." />
+                    <input type="text" placeholder="Search tasks..."/>
                 </form>
             </div>
         </header>
 
 
-        <div id="current-task-list">
+        <div id="current-task-list" class="task-list">
 	    	<h2 class="title">Current Tasks</h2>
 	    	<ul>
 	    		<li>
-	    			<span class="task">This is a test task, try to add yours.</span>
+                    <input type="checkbox" class="check-box"/>
+	    			<span class="task">This is a test task, add yours.</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    	</ul>
+        </div>
+
+
+        <div id="finished-task-list" class="task-list">
+	    	<h2 class="title">Finished Tasks</h2>
+	    	<ul>
+	    		<li>
+                    <input type="checkbox" class="check-box" checked/>
+	    			<span class="task task-finished">This task is finished.</span>
 	    			<span class="delete">delete</span>
 	    		</li>
 	    	</ul>
@@ -38,7 +51,7 @@
             <label for="hide">Hide All Tasks</label> -->
 
             <div id="add-task-bar">
-                <input type="text" placeholder="Add a task..." />
+                <input type="text" placeholder="Add a task..."/>
 	    	    <button type="submit">Add</button>
             </div>
 	    	

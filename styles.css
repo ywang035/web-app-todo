@@ -47,8 +47,7 @@ h1, h2{
 
 
 /* list section */
-
-#current-task-list, #add-book, #tabbed-content{
+/* #current-task-list, #add-book{
     margin: 30px;
 }
 
@@ -66,11 +65,41 @@ h1, h2{
 
 #current-task-list li:hover{
     border-color: #F68D22;
+} */
+
+.task-list, #add-book{
+    margin: 30px;
+}
+
+.task-list ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-list li{
+    padding: 10px;
+    border-left: 5px solid #ddd;
+    margin: 10px 0;
+    display: flex;
+}
+
+.task-list li:hover{
+    border-color: #F68D22;
+}
+
+.check-box {
+    margin: auto 10px auto 0;
+    transform: scale(1.5);
 }
 
 .task {
     margin: auto auto auto 0;
 }
+
+.task-finished {
+    text-decoration: line-through;
+}
+
 .delete{
     margin: auto 0 auto auto;
     background: #F68D22;
@@ -89,6 +118,7 @@ h1, h2{
     display: flex;
     width: 100%;
     box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 
@@ -120,24 +150,3 @@ h1, h2{
     background: #E55d2b;
     border: 2px solid #E55d2b;
 }
-
-
-/*
-#tabbed-content li{
-    display: inline-block;
-    padding: 10px 14px;
-    background: #ddd;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-right: 10px;
-}
-#tabbed-content .tab{
-    display: none;
-    border: 1px solid #ddd;
-    padding: 0 10px;
-    border-radius: 4px;
-}
-#tabbed-content .tab.active{
-    display: block;
-}
-*/
